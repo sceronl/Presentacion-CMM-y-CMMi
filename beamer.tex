@@ -13,53 +13,155 @@
 \section[Índice]{}
 \frame{\tableofcontents}
 \section{CMM}
-\subsection{Siglas}
+\subsection{Que es}
+
 \frame
 {
-  \frametitle{Características}
+  \frametitle{CMM}
   %Va mostrando un ítem por transparencia
   \begin{itemize}
-    \item<1-> Característica 1.
-    \item<2-> Característica 2.
-    \item<3-> Característica 3.
+    \item<1-> Modelo de Capacidad y Madurez o CMM (Capability Maturity Model), es un modelode evaluación de los procesos de una organización. 
+    \item<2-> Fue desarrollado inicialmente para los procesos relativos al software por la Universidad Carnegie-Mellon para el SEI (Software Engineering Institute).
+    \item<3-> El SEI es un centro de investigación y desarrollo patrocinado por el Departamento de Defensa de los Estados Unidos de América y gestionado por la Universidad Carnegie-Mellon. CMM es una marca registrada del SEI.
   \end{itemize}
 }
 
 \frame
 {
-  \frametitle{Más Características}
-  %Muestra todos los ítems en la misma transparencia
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
   \begin{itemize}
-    \item Característica 4.
-    \item Característica 5.
-    \item Característica ...
-    \item Característica n.
+    \item<1-> A partir de noviembre de 1986 el SEI, a requerimiento del Gobierno Federal de los Estados Unidos de América, desarrolló una primera definición de un modelo de madurez de procesos en el desarrollo de software, que se publicó en septiembre de 1987. Este trabajo evolucionó al modelo CMM o SW - CMM (CMM for Software), cuya última versión (v1.1) se publicó en febrero de 1993.
   \end{itemize}
-}
-
-\subsection{Que es}
-\frame
-{
-  \frametitle{Libxml2 y Libxslt}
-}
-
-\frame
-{
-  \frametitle{ElementTree}
 }
 
 \subsection{Que hace}
+
 \frame
 {
-  \frametitle{Libxml2 y Libxslt}
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1-> Este modelo establece un conjunto de prácticas o procesos clave agrupados en Áreas Clave de Proceso (KPA - Key Process Area). Para cada área de proceso define un conjunto de buenas prácticas que habrán de ser:
+    \item<2-> Definidas en un procedimiento documentado.
+    \item<3-> Provistas (la organización) de los medios y formación necesarios.
+    \item<4-> Ejecutadas de un modo sistemático, universal y uniforme (institucionalizadas).
+    \item<5-> Medidas.
+    \item<6-> Verificadas.
+  \end{itemize}
 }
 
 \frame
 {
-  \frametitle{ElementTree}
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1-> A su vez estas Áreas de Proceso se agrupan en cinco "niveles de madurez", de modo que una organización que tenga institucionalizadas todas las prácticas incluidas en un nivel y sus inferiores, se considera que ha alcanzado ese nivel de madurez. Los niveles son:
+    \item<2-> {\Large 1 - Inicial.} Las organizaciones en este nivel no disponen de un ambiente estable para el desarrollo y mantenimiento de software. Aunque se utilicen técnicas correctas de ingeniería, los esfuerzos se ven minados por falta de planificación. El éxito de los proyectos se basa la mayoría de las veces en el esfuerzo personal, aunque a menudo se producen fracasos y casi siempre retrasos y sobrecostes. El resultado de los proyectos es impredecible. 
+  \end{itemize}
 }
 
-\section{La clase xmlm.etree}
+\frame
+{
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1->{\Large  2 - Repetible.} En este nivel las organizaciones disponen de unas prácticas institucionalizadas de gestión de proyectos, existen unas métricas básicas y un razonable seguimiento de la calidad. La relación con subcontratistas y clientes está gestionada sistemáticamente.
+
+    \item<2-> {\Large 3 - Definido.} Además de una buena gestión de proyectos, a este nivel las organizaciones disponen de correctos procedimientos de coordinación entre grupos, formación del personal, técnicas de ingeniería más detallada y un nivel más avanzado de métricas en los procesos. Se implementan técnicas de revisión por pares (peer reviews).
+  \end{itemize}
+}
+
+\frame
+{
+	\frametitle{CMM}
+	\begin{itemize}
+	    \item<1-> {\Large 4 - Gestionado.} Se caracteriza porque las organizaciones disponen de un conjunto de métricas significativas de calidad y productividad, que se usan de modo sistemático para la toma de decisiones y la gestión de riesgos. El software resultante es de alta calidad.
+
+    	\item<2->{\Large  5 - Optimizado.} La organización completa está volcada en la mejora continua de los procesos. Se hace uso intensivo de las métricas y se gestiona el proceso de innovación.
+	\end{itemize}
+}
+
+\frame
+{
+	\frametitle{CMM}
+	\begin{itemize}
+	    \item<1-> Así es como el modelo CMM establece una medida del progreso, conforme al
+avance en niveles de madurez. Cada nivel a su vez cuenta con un número de áreas
+de proceso que deben lograrse. El alcanzar estas áreas o estadios se detecta
+mediante la satisfacción o insatisfacción de varias metas claras y cuantificables. Con
+la excepción del primer nivel, cada uno de los restantes Niveles de Madurez está
+compuesto por un cierto número de Áreas Claves de Proceso, conocidas a través de
+la documentación del CMM por su sigla inglesa: KPA.
+
+
+    	\item<2-> Cada KPA identifica un conjunto de actividades y prácticas interrelacionadas, las
+cuales cuando son realizadas en forma colectiva permiten alcanzar las metas
+fundamentales del proceso. Las KPAs pueden clasificarse en 3 tipos de proceso:
+Gestión, Organizacional e Ingeniería.
+
+	\end{itemize}
+}
+
+\frame
+{
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1-> Las prácticas que deben ser realizadas por cada Area Clave de Proceso están
+organizadas en 5 Características Comunes, las cuales constituyen propiedades que
+indican si la implementación y la institucionalización de un proceso clave es efectivo,
+repetible y duradero.
+
+    \item<2-> Estas 5 características son: i)Compromiso de la realización, ii) La capacidad de
+realización, iii) Las actividades realizadas, iv) Las mediciones y el análisis, v) La
+verificación de la implementación.
+
+  \end{itemize}
+}
+
+\subsection{Entonces}
+
+\frame
+{
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1-> Las organizaciones que utilizan CMM para mejorar sus procesos disponen de una guía útil para orientar sus esfuerzos. Además, el SEI proporciona formación a
+evaluadores certificados (Lead Assesors) capacitados para evaluar y certificar el
+nivel CMM en el que se encuentra una organización. Esta certificación es requerida
+por el Departamento de Defensa de los Estados Unidos, pero también es utilizada
+por multitud de organizaciones de todo el mundo para valorar a sus subcontratistas
+de software.
+    \item<2-> Se considera típico que una organización dedique unos 18 meses para progresar un
+nivel, aunque algunas consiguen mejorarlo. En cualquier caso requiere un amplio
+esfuerzo y un compromiso intenso de la dirección.
+
+  \end{itemize}
+}
+
+\frame
+{
+  \frametitle{CMM}
+  %Va mostrando un ítem por transparencia
+  \begin{itemize}
+    \item<1-> Como consecuencia, muchas organizaciones que realizan funciones de factoría de
+software o, en general, outsourcing de procesos de software, adoptan el modelo
+CMM y se certifican en alguno de sus niveles. Esto explica que uno de los países en
+el que más organizaciones certificadas exista sea India, donde han florecido las
+factorías de software que trabajan para clientes estadounidenses y europeos.
+
+    \item<2-> A partir de 2001, en que se presentó el modelo CMMI, el SEI ha dejado de
+desarrollar el SW-CMM, cesando la formación de los evaluadores en diciembre de
+2003, quienes dispondrán hasta fin de 2005 para reciclarse al CMMI. Las
+organizaciones que sigan el modelo SW-CMM podrán continuar haciéndolo, pero ya
+no podrán ser certificadas a partir de fin de 2005.
+
+
+  \end{itemize}
+}
+
+\section{CMMi}
 \subsection{Características}
 \frame
 {
